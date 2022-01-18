@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="horizontal"
+    android:background="#F1EEEE"
+    android:layout_marginTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/eventTmb"
+        android:layout_width="120dp"
+        android:layout_height="95dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="left|center_vertical"
+        android:text="left"
+        android:layout_marginLeft="5dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/eventDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:layout_marginLeft="20dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>
